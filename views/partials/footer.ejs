@@ -1,0 +1,41 @@
+
+   <footer>
+       <div class="items-card">
+         <img class="img" src="https://www.freelogodesign.org/file/app/blog/20180911104538148amazon-logo.jpg">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id est dolore harum beatae maiores et similique amet velit, recusandae laborum possimus facere iste voluptatibus deleniti a ut nisi necessitatibus fugit.
+       </div>
+       
+       <div class="items-card">
+         <h4>Social Links</h4>
+         <span>
+          <i class="fab fa-facebook-f icon"></i> <a href="#"></a>
+          <i class="fa fa-twitter icon"></i><a href="#"></a>
+          <i class="fa fa-instagram icon"></i> <a href="#"></a>
+          <i class="fa fa-google icon"></i><a href="#"></a>
+        </span>
+       </div>
+   </footer>
+   <div class="about">
+     &copy; Copyright. Shopcart
+   </div>
+
+   
+        <script>
+        $( document ).ready(function() {
+          document.getElementById("hi_man").innerText = "Hi - "+localStorage.getItem("userkaname");
+
+          $("#hi_man").click(function(){
+              window.location.href = "/profile/"+localStorage.getItem("userkaname");
+            });
+        
+          $("#logout").click(function(){
+              console.log("I am clicked");
+              localStorage.clear();
+              window.location.href = "/user";
+            });
+          });
+      
+           $(".bar-icon").click(function(){
+             $(".menu-item").toggleClass('open-menu');
+           });
+        </script>
